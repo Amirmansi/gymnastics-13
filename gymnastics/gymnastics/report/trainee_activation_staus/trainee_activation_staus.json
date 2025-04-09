@@ -1,0 +1,78 @@
+{
+ "add_total_row": 0,
+ "columns": [
+  {
+   "fieldname": " t.name",
+   "fieldtype": "Link",
+   "label": "Trainee Code",
+   "options": "Trainee",
+   "width": 120
+  },
+  {
+   "fieldname": "t.trainee_name",
+   "fieldtype": "Data",
+   "label": "Trainee Name",
+   "width": 225
+  },
+  {
+   "fieldname": "t.trainee_name_ar",
+   "fieldtype": "Data",
+   "label": "Trainee Name (Ar)",
+   "width": 250
+  },
+  {
+   "fieldname": "t.gender",
+   "fieldtype": "Data",
+   "label": "Gender",
+   "width": 100
+  },
+  {
+   "fieldname": "t.mobile",
+   "fieldtype": "Data",
+   "label": "Contact Number",
+   "width": 120
+  },
+  {
+   "fieldname": "end_on",
+   "fieldtype": "Data",
+   "label": "End On",
+   "width": 100
+  },
+  {
+   "fieldname": "Status",
+   "fieldtype": "Check",
+   "label": "status",
+   "width": 100
+  }
+ ],
+ "creation": "2023-01-03 18:55:34.758877",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letter_head": "Limber",
+ "modified": "2023-01-03 18:55:34.758877",
+ "modified_by": "Administrator",
+ "module": "Gymnastics",
+ "name": "Trainee Activation Staus",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "SELECT \n    t.name,\n    t.trainee_name,\n    t.trainee_name_ar,\n    t.gender,\n    t.mobile,\n    max(ss.date) end_on,\n    if(max(ss.date) >= date(now()), 1, 0) status\n        FROM `tabTrainee` t\n        \n    LEFT JOIN \n            (SELECT ts.trainee as trainee, max(tsd.date) as date FROM \n            `tabTrainee Course Schedule`ts\n            LEFT JOIN `tabTrainee Course Schedule Details` tsd\n            ON ts.name = tsd.parent \n            GROUP BY ts.trainee) ss  on t.name = ss.trainee\n            \n    GROUP BY \n        t.name,\n        t.trainee_name,\n        t.trainee_name_ar,\n        t.gender,\n        t.mobile\n ",
+ "ref_doctype": "Trainee",
+ "report_name": "Trainee Activation Staus",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Coach"
+  },
+  {
+   "role": "Receptionist"
+  }
+ ]
+}

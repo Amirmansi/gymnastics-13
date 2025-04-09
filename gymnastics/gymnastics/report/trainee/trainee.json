@@ -1,0 +1,31 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2022-04-21 05:32:16.387264",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letter_head": "Limber",
+ "modified": "2022-04-21 20:58:14.206683",
+ "modified_by": "Administrator",
+ "module": "Gymnastics",
+ "name": "Trainee",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "SELECT a.trainee_name Trainee, a.session AS Subscription, a.group `Group Name`, a.coach_name Coach, MAX(b.date) AS `End Date`\n          FROM `tabTrainee Course Schedule` a\n    \nINNER JOIN `tabTrainee Course Schedule Details` b\non a.name = b.parent\n    GROUP BY Trainee\n    \nORDER BY `End Date` ASC",
+ "ref_doctype": "Trainee Course Schedule",
+ "report_name": "Trainee",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Trainee"
+  }
+ ]
+}

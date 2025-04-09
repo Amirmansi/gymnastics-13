@@ -1,0 +1,28 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2022-04-22 03:48:23.156456",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letter_head": "Limber",
+ "modified": "2024-12-05 18:55:20.813093",
+ "modified_by": "Administrator",
+ "module": "Gymnastics",
+ "name": "Trainee Updates",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "SELECT ti.name as `Trainee:Link/Trainee`, ti.trainee_name as `Trainee Name`, ti.national_id as ID, ti.mobile as Mobile, \r\nti.email as Email, ti.group as `Group Name:Link/Gymnastics Group`, ti.coach_name as Coach, ti.end_date as `End Date`, \r\nti.left_days as `Left Days`, ti.left_classes as `Left Classes`, sii.name as `Unenrolled Invoice:Link/Sales Invoice` \r\n        FROM (SELECT t.name, t.trainee_name, t.national_id, t.mobile, t.email, s.session, s.group, s.coach_name, max(ss.date) as end_date\r\n, DATEDIFF(MAX(ss.date), CURDATE()) AS left_days, COUNT(IF(ss.date >= CURDATE(),1,null)) as left_classes\r\n    FROM `tabTrainee` t ,  `tabTrainee Course Schedule` s, `tabTrainee Course Schedule Details` ss\r\n    WHERE t.name = s.trainee and s.name = ss.parent\r\n    GROUP BY t.name) ti\r\n \r\nleft JOIN (SELECT si.trainee, si.enroll, si.name, si.status from `tabSales Invoice` si where (si.enroll = 0  and si.extend_plan = 0 and si.renew_plan = 0) and si.status = \"paid\") sii \r\n        ON ti.name = sii.trainee\r\n \r\nwhere ti.left_days > -21\r\nORDER BY `End_Date` ASC\r\n\r\n",
+ "ref_doctype": "Trainee",
+ "report_name": "Trainee Updates",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ]
+}

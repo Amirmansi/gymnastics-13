@@ -1,0 +1,74 @@
+{
+ "add_total_row": 1,
+ "columns": [
+  {
+   "fieldname": "trainee",
+   "fieldtype": "Link",
+   "label": "Trainee Code",
+   "options": "Trainee",
+   "width": 120
+  },
+  {
+   "fieldname": "trainee_name",
+   "fieldtype": "Data",
+   "label": "Trainee Name",
+   "width": 300
+  },
+  {
+   "fieldname": "sessions",
+   "fieldtype": "Int",
+   "label": "Sessions",
+   "width": 100
+  }
+ ],
+ "creation": "2024-08-19 00:47:47.346025",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [
+  {
+   "fieldname": "from",
+   "fieldtype": "Date",
+   "label": "From Date",
+   "mandatory": 0,
+   "wildcard_filter": 0
+  },
+  {
+   "fieldname": "to",
+   "fieldtype": "Date",
+   "label": "To Date",
+   "mandatory": 0,
+   "wildcard_filter": 0
+  }
+ ],
+ "idx": 0,
+ "is_standard": "Yes",
+ "javascript": "",
+ "letter_head": "Limber",
+ "modified": "2024-10-15 08:39:47.647922",
+ "modified_by": "Administrator",
+ "module": "Gymnastics",
+ "name": "Active Trainee By Period",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "SELECT \n        trainee AS trainee,\n        trainee_name, \n        COUNT(*) AS sessions\n    FROM `tabTrainee Course Schedule Details`\n    WHERE date BETWEEN %(from)s AND %(to)s\n    GROUP BY trainee, trainee_name\n    ORDER BY trainee ASC",
+ "ref_doctype": "Trainee Course Schedule Details",
+ "report_name": "Active Trainee By Period",
+ "report_script": "frappe.query_reports[\"Active Trainee By Period\"] = {\n    \"filters\": [\n        {\n            \"fieldname\": \"from_date\",\n            \"label\": __(\"From Date\"),\n            \"fieldtype\": \"Date\",\n            \"default\": frappe.datetime.add_months(frappe.datetime.nowdate(), -3),  # Default to 3 months ago from today\n            \"reqd\": 1  # Set to 1 to make the filter mandatory\n        },\n        {\n            \"fieldname\": \"to_date\",\n            \"label\": __(\"To Date\"),\n            \"fieldtype\": \"Date\",\n            \"default\": frappe.datetime.nowdate(),  # Default to today\n            \"reqd\": 1  # Set to 1 to make the filter mandatory\n        }\n    ]\n}",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "Accounts Manager"
+  },
+  {
+   "role": "Accounts User"
+  },
+  {
+   "role": "Report Manager"
+  },
+  {
+   "role": "Auditor"
+  }
+ ]
+}

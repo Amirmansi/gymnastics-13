@@ -1,0 +1,64 @@
+{
+ "add_total_row": 0,
+ "columns": [
+  {
+   "fieldname": "trainee",
+   "fieldtype": "Link",
+   "label": "Trainee Code",
+   "options": "Trainee",
+   "width": 0
+  },
+  {
+   "fieldname": "trainee_name",
+   "fieldtype": "Data",
+   "label": "Trainee Name",
+   "width": 0
+  },
+  {
+   "fieldname": "gymnastics_group",
+   "fieldtype": "Data",
+   "label": "Group",
+   "width": 0
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date",
+   "width": 0
+  }
+ ],
+ "creation": "2023-12-05 23:02:45.787215",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [
+  {
+   "fieldname": "trainee",
+   "fieldtype": "Link",
+   "label": "Trainee Code",
+   "mandatory": 1,
+   "options": "Trainee",
+   "wildcard_filter": 0
+  }
+ ],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letter_head": "Limber",
+ "modified": "2023-12-23 22:26:02.458202",
+ "modified_by": "Administrator",
+ "module": "Gymnastics",
+ "name": "Trainee Group Follow Up",
+ "owner": "islam@limber.sa",
+ "prepared_report": 0,
+ "query": "SELECT trainee, trainee_name, gymnastics_group, date\n    FROM `tabTrainee Course Schedule Details`\n    WHERE trainee IS NOT NULL AND date < CURDATE() AND trainee LIKE %(trainee)s\n    ORDER BY trainee, date DESC\n   \n",
+ "ref_doctype": "Trainee",
+ "report_name": "Trainee Group Follow Up",
+ "report_script": "",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ]
+}

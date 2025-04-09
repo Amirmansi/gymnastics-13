@@ -1,0 +1,34 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2022-05-05 23:21:30.271006",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "json": "{\"filters\":[[\"Sales Invoice\",\"enroll\",\"=\",0,false],[\"Sales Invoice\",\"status\",\"=\",\"Paid\",false],[\"Sales Invoice\",\"company\",\"=\",\"\u0634\u0631\u0643\u0629 \u0623\u0628\u0637\u0627\u0644 \u0627\u0644\u063a\u062f \u0627\u0644\u0631\u064a\u0627\u0636\u064a\u0629\"],[\"Sales Invoice\",\"status\",\"=\",\"Paid\"]],\"fields\":[[\"name\",\"Sales Invoice\"],[\"docstatus\",\"Sales Invoice\"],[\"company\",\"Sales Invoice\"],[\"customer\",\"Sales Invoice\"],[\"posting_date\",\"Sales Invoice\"],[\"trainee\",\"Sales Invoice\"],[\"enroll\",\"Sales Invoice\"],[\"grand_total\",\"Sales Invoice\"],[\"status\",\"Sales Invoice\"],[\"currency\",\"Sales Invoice\"],[\"customer_name\",\"Sales Invoice\"],[\"base_grand_total\",\"Sales Invoice\"],[\"outstanding_amount\",\"Sales Invoice\"],[\"due_date\",\"Sales Invoice\"],[\"is_return\",\"Sales Invoice\"],[\"net_total\",\"Sales Invoice\"],[\"party_account_currency\",\"Sales Invoice\"],[\"total_taxes_and_charges\",\"Sales Invoice\"],[\"item_tax_template\",\"Sales Invoice Item\"]],\"order_by\":\"`tabSales Invoice`.`name` desc\",\"add_totals_row\":true,\"page_length\":20,\"column_widths\":{\"name\":120,\"company\":120,\"customer\":120,\"posting_date\":120,\"trainee\":120,\"enroll\":120,\"grand_total\":120,\"status\":120,\"currency\":120,\"customer_name\":120,\"base_grand_total\":120,\"outstanding_amount\":120,\"due_date\":120,\"is_return\":120,\"net_total\":120,\"party_account_currency\":120,\"total_taxes_and_charges\":120,\"Sales Invoice Item:item_tax_template\":120},\"group_by\":null}",
+ "letter_head": "Limber",
+ "modified": "2022-05-05 23:35:57.461906",
+ "modified_by": "Administrator",
+ "module": "Gymnastics",
+ "name": "Unenrolled Invoices",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Sales Invoice",
+ "report_name": "Unenrolled Invoices",
+ "report_type": "Report Builder",
+ "roles": [
+  {
+   "role": "Accounts Manager"
+  },
+  {
+   "role": "Accounts User"
+  },
+  {
+   "role": "Employee Self Service"
+  }
+ ]
+}
