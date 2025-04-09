@@ -1,0 +1,130 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "TRNTRF.#####",
+ "creation": "2022-04-23 13:56:45.675536",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "trainee",
+  "column_break_2",
+  "trainee_name",
+  "column_break_4",
+  "trans_date",
+  "section_break_3",
+  "from_group",
+  "column_break_5",
+  "to_group",
+  "column_break_10",
+  "effective_date",
+  "section_break_7",
+  "remaining_session",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "trainee",
+   "fieldtype": "Link",
+   "label": "Trainee",
+   "options": "Trainee"
+  },
+  {
+   "fetch_from": "trainee.trainee_name",
+   "fieldname": "trainee_name",
+   "fieldtype": "Read Only",
+   "label": "Trainee Name"
+  },
+  {
+   "fieldname": "section_break_3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "from_group",
+   "fieldtype": "Link",
+   "label": "From Group",
+   "options": "Gymnastics Group",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "to_group",
+   "fieldtype": "Link",
+   "label": "To Group",
+   "options": "Gymnastics Group",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "effective_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Effective Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Trainee Transfer",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "remaining_session",
+   "fieldtype": "Read Only",
+   "hidden": 1,
+   "label": "New Session"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "trans_date",
+   "fieldtype": "Date",
+   "label": "Trans Date",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-07-24 19:06:36.684003",
+ "modified_by": "Administrator",
+ "module": "Gymnastics",
+ "name": "Trainee Transfer",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

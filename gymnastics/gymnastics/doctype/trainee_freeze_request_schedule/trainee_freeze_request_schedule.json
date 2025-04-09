@@ -1,0 +1,55 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-03-23 09:58:23.802082",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "schedule_date",
+  "day",
+  "group",
+  "course"
+ ],
+ "fields": [
+  {
+   "fieldname": "schedule_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Schedule Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "day",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "label": "Day",
+   "read_only": 1
+  },
+  {
+   "fieldname": "group",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "label": "Group",
+   "read_only": 1
+  },
+  {
+   "fieldname": "course",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "label": "Course",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-03-23 09:58:28.327336",
+ "modified_by": "Administrator",
+ "module": "Gymnastics",
+ "name": "Trainee Freeze Request Schedule",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

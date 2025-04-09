@@ -1,0 +1,46 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-05-10 22:58:38.866206",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "type",
+  "invoice_no",
+  "session"
+ ],
+ "fields": [
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Type",
+   "options": "Extend",
+   "read_only": 1
+  },
+  {
+   "fieldname": "invoice_no",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "label": "Invoice No"
+  },
+  {
+   "fieldname": "session",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "label": "Session"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-05-10 22:58:49.430170",
+ "modified_by": "Administrator",
+ "module": "Gymnastics",
+ "name": "Trainee Enrollment Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

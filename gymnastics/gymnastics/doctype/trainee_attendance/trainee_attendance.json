@@ -1,0 +1,90 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "TRNATT.#####",
+ "creation": "2022-04-20 19:19:28.965814",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "trainee",
+  "trainee_name",
+  "trainee_group",
+  "column_break_3",
+  "date",
+  "status",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "trainee",
+   "fieldtype": "Link",
+   "label": "Trainee",
+   "options": "Trainee"
+  },
+  {
+   "fieldname": "trainee_name",
+   "fieldtype": "Read Only",
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Trainee Name"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Trainee Attendance",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nPresent\nAbsent"
+  },
+  {
+   "fieldname": "trainee_group",
+   "fieldtype": "Link",
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Group",
+   "options": "Gymnastics Group"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-08-28 00:18:10.381554",
+ "modified_by": "Administrator",
+ "module": "Gymnastics",
+ "name": "Trainee Attendance",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_preview_popup": 1,
+ "sort_field": "date",
+ "sort_order": "DESC"
+}

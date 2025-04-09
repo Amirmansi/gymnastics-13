@@ -1,0 +1,87 @@
+{
+ "actions": [],
+ "allow_copy": 1,
+ "creation": "2022-03-23 19:48:50.368950",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "group",
+  "date",
+  "column_break_2",
+  "select_date",
+  "attendance",
+  "traniee_html"
+ ],
+ "fields": [
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "attendance",
+   "fieldtype": "Section Break",
+   "label": "Attendance"
+  },
+  {
+   "fieldname": "traniee_html",
+   "fieldtype": "HTML",
+   "label": "Trainee HTML"
+  },
+  {
+   "fieldname": "group",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Group",
+   "options": "Gymnastics Group"
+  },
+  {
+   "fieldname": "select_date",
+   "fieldtype": "Button",
+   "label": "Select Date"
+  }
+ ],
+ "hide_toolbar": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2022-05-28 01:46:54.128221",
+ "modified_by": "Administrator",
+ "module": "Gymnastics",
+ "name": "Trainee Attendance Tool",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "read": 1,
+   "role": "Instructor",
+   "write": 1
+  },
+  {
+   "create": 1,
+   "read": 1,
+   "role": "Academics User",
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "Administrator",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_seen": 1,
+ "track_views": 1
+}
