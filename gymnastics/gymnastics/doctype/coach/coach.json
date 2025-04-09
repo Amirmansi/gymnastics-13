@@ -1,0 +1,108 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "COACH.#####",
+ "creation": "2022-01-30 09:52:30.927727",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "coach_name",
+  "gender",
+  "birthdate",
+  "user",
+  "column_break_6",
+  "status",
+  "national_id",
+  "nationality",
+  "employee",
+  "profile_image"
+ ],
+ "fields": [
+  {
+   "fieldname": "profile_image",
+   "fieldtype": "Attach Image",
+   "in_preview": 1,
+   "label": "Profile Image"
+  },
+  {
+   "fieldname": "coach_name",
+   "fieldtype": "Data",
+   "label": "Coach Name"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Link",
+   "in_global_search": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Gender",
+   "options": "Gender"
+  },
+  {
+   "fieldname": "birthdate",
+   "fieldtype": "Date",
+   "label": "Birthdate"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nActive\nLeft"
+  },
+  {
+   "fieldname": "national_id",
+   "fieldtype": "Data",
+   "label": "Iqama/National Id"
+  },
+  {
+   "fieldname": "nationality",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Nationality",
+   "options": "Country",
+   "reqd": 1
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "label": "User",
+   "options": "User"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-10-06 15:11:26.664502",
+ "modified_by": "Administrator",
+ "module": "Gymnastics",
+ "name": "Coach",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "coach_name",
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

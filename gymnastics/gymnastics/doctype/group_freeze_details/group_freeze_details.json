@@ -1,0 +1,37 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-04-20 18:18:26.350473",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "schedule_date",
+  "day"
+ ],
+ "fields": [
+  {
+   "fieldname": "schedule_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Schedule Date"
+  },
+  {
+   "fieldname": "day",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "label": "Day"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-04-20 18:18:26.350473",
+ "modified_by": "Administrator",
+ "module": "Gymnastics",
+ "name": "Group Freeze Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

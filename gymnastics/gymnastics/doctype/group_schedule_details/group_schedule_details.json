@@ -1,0 +1,100 @@
+{
+ "actions": [],
+ "allow_events_in_timeline": 1,
+ "allow_rename": 1,
+ "creation": "2022-02-01 18:17:14.176920",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "day",
+  "active",
+  "holiday",
+  "freeze",
+  "from_time",
+  "to_time",
+  "attendance",
+  "group",
+  "from_datetime",
+  "to_datetime"
+ ],
+ "fields": [
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date"
+  },
+  {
+   "fieldname": "day",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Day",
+   "options": "\nSunday\nMonday\nTuesday\nWednesday\nThursday\nFriday\nSaturday"
+  },
+  {
+   "default": "0",
+   "fieldname": "active",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Active"
+  },
+  {
+   "default": "0",
+   "fieldname": "holiday",
+   "fieldtype": "Check",
+   "label": "Holiday"
+  },
+  {
+   "default": "0",
+   "fieldname": "freeze",
+   "fieldtype": "Check",
+   "label": "Freeze"
+  },
+  {
+   "fieldname": "from_time",
+   "fieldtype": "Time",
+   "label": "From Time"
+  },
+  {
+   "fieldname": "to_time",
+   "fieldtype": "Time",
+   "label": "To Time"
+  },
+  {
+   "default": "0",
+   "fieldname": "attendance",
+   "fieldtype": "Check",
+   "label": "Attendance"
+  },
+  {
+   "fieldname": "group",
+   "fieldtype": "Link",
+   "label": "Group",
+   "options": "Gymnastics Group",
+   "read_only": 1
+  },
+  {
+   "fieldname": "from_datetime",
+   "fieldtype": "Datetime",
+   "label": "From Datetime"
+  },
+  {
+   "fieldname": "to_datetime",
+   "fieldtype": "Datetime",
+   "label": "To Datetime"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-09-08 18:09:57.455608",
+ "modified_by": "Administrator",
+ "module": "Gymnastics",
+ "name": "Group Schedule Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

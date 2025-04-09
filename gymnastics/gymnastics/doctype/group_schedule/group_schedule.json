@@ -1,0 +1,256 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "GRPSCH.#####",
+ "creation": "2022-02-01 18:17:57.999458",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "group",
+  "column_break9",
+  "coach_name",
+  "col_break12",
+  "disable_check",
+  "time_section",
+  "from_time",
+  "column_break_4",
+  "to_time",
+  "section_break_2",
+  "saturday",
+  "cb_c_1",
+  "sunday",
+  "column_break_10",
+  "monday",
+  "cb_c_2",
+  "tuesday",
+  "column_bk03",
+  "wednesday",
+  "column_bk04",
+  "thursday",
+  "column_bk05",
+  "friday",
+  "section_break_12",
+  "from_date",
+  "column_break_14",
+  "to_date",
+  "column_break_16",
+  "add_custom_days",
+  "section_break_25",
+  "group_schedule_time",
+  "update",
+  "section_break_16",
+  "schedules"
+ ],
+ "fields": [
+  {
+   "fieldname": "group",
+   "fieldtype": "Link",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Group",
+   "options": "Gymnastics Group",
+   "read_only": 1
+  },
+  {
+   "columns": 7,
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break",
+   "label": "Days"
+  },
+  {
+   "default": "0",
+   "fieldname": "sunday",
+   "fieldtype": "Check",
+   "label": "Sunday"
+  },
+  {
+   "default": "0",
+   "fieldname": "wednesday",
+   "fieldtype": "Check",
+   "label": "Wednesday"
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "saturday",
+   "fieldtype": "Check",
+   "label": "Saturday",
+   "width": "100%"
+  },
+  {
+   "default": "0",
+   "fieldname": "monday",
+   "fieldtype": "Check",
+   "label": "Monday"
+  },
+  {
+   "default": "0",
+   "fieldname": "thursday",
+   "fieldtype": "Check",
+   "label": "Thursday"
+  },
+  {
+   "default": "0",
+   "fieldname": "tuesday",
+   "fieldtype": "Check",
+   "label": "Tuesday"
+  },
+  {
+   "default": "0",
+   "fieldname": "friday",
+   "fieldtype": "Check",
+   "label": "Friday"
+  },
+  {
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "From Date"
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "To Date"
+  },
+  {
+   "fieldname": "section_break_16",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "schedules",
+   "fieldtype": "Table",
+   "label": "Schedules",
+   "options": "Group Schedule Details"
+  },
+  {
+   "fieldname": "column_break_16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "add_custom_days",
+   "fieldtype": "Button",
+   "label": "Add Days"
+  },
+  {
+   "fieldname": "cb_c_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cb_c_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "time_section",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "from_time",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "From Time"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "to_time",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "To Time"
+  },
+  {
+   "fetch_from": "group.coach_name",
+   "fieldname": "coach_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Coach Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_25",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "group_schedule_time",
+   "fieldtype": "Table",
+   "label": "Group Schedule Time",
+   "options": "Group Schedule Time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "update",
+   "fieldtype": "Button",
+   "label": "Add Days"
+  },
+  {
+   "fieldname": "column_bk03",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_bk04",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_bk05",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "col_break12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "disable_check",
+   "fieldtype": "Check",
+   "label": "Disable"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-08-29 20:37:37.067986",
+ "modified_by": "Administrator",
+ "module": "Gymnastics",
+ "name": "Group Schedule",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

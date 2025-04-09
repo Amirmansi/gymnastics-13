@@ -1,0 +1,149 @@
+{
+ "actions": [],
+ "allow_events_in_timeline": 1,
+ "allow_rename": 1,
+ "autoname": "format:{course} [ {group_name} ]",
+ "creation": "2022-02-01 18:11:26.251890",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "group_name",
+  "disable",
+  "age_group",
+  "skills_type",
+  "column_break_5",
+  "course",
+  "group_coach",
+  "coach_name",
+  "group_color",
+  "section_break_5",
+  "trainees",
+  "coach_email"
+ ],
+ "fields": [
+  {
+   "fieldname": "group_name",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Group Code",
+   "reqd": 1
+  },
+  {
+   "fieldname": "course",
+   "fieldtype": "Link",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Course",
+   "options": "Gymnastics Course",
+   "reqd": 1
+  },
+  {
+   "fieldname": "group_coach",
+   "fieldtype": "Link",
+   "in_preview": 1,
+   "label": "Group Coach",
+   "options": "Coach"
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "trainees",
+   "fieldtype": "Table",
+   "label": "Trainees",
+   "options": "Group Trainee Details"
+  },
+  {
+   "fetch_from": "group_coach.coach_name",
+   "fieldname": "coach_name",
+   "fieldtype": "Read Only",
+   "in_global_search": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Coach Name"
+  },
+  {
+   "default": "0",
+   "fieldname": "disable",
+   "fieldtype": "Check",
+   "label": "Disable"
+  },
+  {
+   "fieldname": "skills_type",
+   "fieldtype": "Select",
+   "label": "Skills Level",
+   "options": "NA\nBEGINNER\nINTERMEDIATE\nADVANCED\nCOMPETITION\n---\nJunior\nSenior"
+  },
+  {
+   "fetch_from": "course.age_range",
+   "fieldname": "age_group",
+   "fieldtype": "Read Only",
+   "label": "Age Group"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "group_coach.user",
+   "fieldname": "coach_email",
+   "fieldtype": "Data",
+   "label": "Coach Email",
+   "options": "Email",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "course.course_color",
+   "fieldname": "group_color",
+   "fieldtype": "Color",
+   "label": "Color",
+   "read_only": 1
+  }
+ ],
+ "icon": "group",
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "link_doctype": "Group Schedule",
+   "link_fieldname": "group"
+  },
+  {
+   "link_doctype": "Group Freeze",
+   "link_fieldname": "group"
+  }
+ ],
+ "modified": "2024-12-17 17:48:55.067636",
+ "modified_by": "Administrator",
+ "module": "Gymnastics",
+ "name": "Gymnastics Group",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "coach_name,skills_type,age_group,skills_type",
+ "show_name_in_global_search": 1,
+ "show_preview_popup": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

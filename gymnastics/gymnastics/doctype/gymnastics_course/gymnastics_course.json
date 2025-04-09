@@ -1,0 +1,107 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{program}-{course_name}",
+ "creation": "2022-01-22 13:31:53.476501",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "course_name",
+  "program",
+  "item",
+  "column_break_1",
+  "couse_name_ar",
+  "course_color",
+  "section_break_3",
+  "gymnastics_course_amount",
+  "criterias_section",
+  "age_range"
+ ],
+ "fields": [
+  {
+   "fieldname": "course_name",
+   "fieldtype": "Data",
+   "label": "Course Name"
+  },
+  {
+   "fieldname": "program",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Program",
+   "options": "Gymnastics Program",
+   "reqd": 1
+  },
+  {
+   "fieldname": "criterias_section",
+   "fieldtype": "Section Break",
+   "label": "Criterias"
+  },
+  {
+   "fieldname": "age_range",
+   "fieldtype": "Data",
+   "label": "Age Range"
+  },
+  {
+   "fieldname": "section_break_3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "gymnastics_course_amount",
+   "fieldtype": "Table",
+   "label": "Gymnastics Course Amount",
+   "options": "Gymnastics Course Amount"
+  },
+  {
+   "fieldname": "item",
+   "fieldtype": "Link",
+   "label": "Item",
+   "options": "Item"
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "couse_name_ar",
+   "fieldtype": "Data",
+   "label": "Course Name (AR)"
+  },
+  {
+   "fieldname": "course_color",
+   "fieldtype": "Color",
+   "in_filter": 1,
+   "in_standard_filter": 1,
+   "label": "Course Color"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "group": "Gymnastics Group",
+   "link_doctype": "Gymnastics Group",
+   "link_fieldname": "course"
+  }
+ ],
+ "modified": "2023-12-16 17:44:20.515918",
+ "modified_by": "Administrator",
+ "module": "Gymnastics",
+ "name": "Gymnastics Course",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "course_name",
+ "sort_order": "ASC"
+}

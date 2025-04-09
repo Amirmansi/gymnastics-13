@@ -1,0 +1,191 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-07-22 00:42:20.346703",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sctn_brk2",
+  "assess_details_section",
+  "applicant_name",
+  "applicant_dob",
+  "clmn_bk1",
+  "medical_note",
+  "section_break_7",
+  "hd_2",
+  "guidelines_section",
+  "guidelines_text",
+  "section_break_11",
+  "recommended_program",
+  "column_break_13",
+  "recommended_course",
+  "column_break_15",
+  "recommended_group",
+  "section_break_17",
+  "child_behavior",
+  "column_break_19",
+  "additional_note",
+  "section_break_21",
+  "html_editor_21",
+  "section_break_23",
+  "html_24"
+ ],
+ "fields": [
+  {
+   "fieldname": "guidelines_section",
+   "fieldtype": "Section Break",
+   "label": "Guidelines "
+  },
+  {
+   "fieldname": "guidelines_text",
+   "fieldtype": "HTML",
+   "options": "<p>IF CHILD IS UNDER AGE OF 4, THEY MUST ENROLL IN MINIMUM 1 MONTH SEEDS PROGRAM AS A PREREQUISITE FOR BLOSSOMS PROGRAM.</p>\n<p>SEEDS (BIG) CLASS AGE: 3-4</p>"
+  },
+  {
+   "fieldname": "assess_details_section",
+   "fieldtype": "Section Break",
+   "label": "Applicant Details"
+  },
+  {
+   "fieldname": "applicant_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Applicant Name",
+   "options": "Name",
+   "reqd": 1
+  },
+  {
+   "bold": 1,
+   "fieldname": "medical_note",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Medical Note",
+   "reqd": 1
+  },
+  {
+   "fieldname": "applicant_dob",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Applicant DoB",
+   "reqd": 1
+  },
+  {
+   "fieldname": "clmn_bk1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "bold": 1,
+   "description": "This part felled by receptionist. Then assign a coach for it.",
+   "fieldname": "sctn_brk2",
+   "fieldtype": "Heading",
+   "label": "Reception Responsibility"
+  },
+  {
+   "fieldname": "hd_2",
+   "fieldtype": "Heading",
+   "label": "Assessment Result"
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break",
+   "label": "Recommendation"
+  },
+  {
+   "fieldname": "recommended_program",
+   "fieldtype": "Link",
+   "label": "Program",
+   "options": "Gymnastics Program",
+   "reqd": 1
+  },
+  {
+   "fieldname": "recommended_course",
+   "fieldtype": "Link",
+   "label": "Course",
+   "options": "Gymnastics Course",
+   "reqd": 1
+  },
+  {
+   "fieldname": "recommended_group",
+   "fieldtype": "Link",
+   "label": "Group",
+   "options": "Gymnastics Group",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_17",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "child_behavior",
+   "fieldtype": "Small Text",
+   "label": "Child Behaviour",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_19",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "additional_note",
+   "fieldtype": "Small Text",
+   "label": "Additional Note"
+  },
+  {
+   "fieldname": "html_editor_21",
+   "fieldtype": "HTML",
+   "options": "<style type=\"text/css\">\n.tg  {border-collapse:collapse;border-color:#ccc;border-spacing:0;}\n.tg td{background-color:#fff;border-color:#ccc;border-style:solid;border-width:1px;color:#333;\n  font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:12px 20px;word-break:normal;}\n.tg th{background-color:#f0f0f0;border-color:#ccc;border-style:solid;border-width:1px;color:#333;\n  font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:12px 20px;word-break:normal;}\n.tg .tg-cly1{text-align:left;vertical-align:middle}\n.tg .tg-cb0w{border-color:inherit;font-family:Verdana, Geneva, sans-serif !important;font-weight:bold;text-align:left;\n  vertical-align:top}\n.tg .tg-yla0{font-weight:bold;text-align:left;vertical-align:middle}\n</style>\n<table class=\"tg\">\n<thead>\n  <tr>\n    <th class=\"tg-cb0w\">Artistic</th>\n    <th class=\"tg-cb0w\">Blossoms Small</th>\n    <th class=\"tg-cb0w\">Blossoms Big</th>\n    <th class=\"tg-cb0w\">SQ 1 Small</th>\n    <th class=\"tg-cb0w\">SQ 1 Big</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td class=\"tg-yla0\">Forwards Roll</td>\n    <td class=\"tg-cly1\"><input name=\"name1\" type=\"checkbox\">&nbsp; Down wedge</td>\n    <td class=\"tg-cly1\"><input name=\"name1\" type=\"checkbox\">&nbsp; On floor</td>\n    <td class=\"tg-cly1\"><input name=\"name1\" type=\"checkbox\">&nbsp; Dive roll</td>\n    <td class=\"tg-cly1\"><input name=\"name1\" type=\"checkbox\">&nbsp; Front tuck on trampoline</td>\n  </tr>\n  <tr>\n    <td class=\"tg-yla0\"><span style=\"font-style: normal; text-decoration: none; color: #000; background-color: transparent;\">Backwards Roll</span></td>\n    <td class=\"tg-cly1\"><span style=\"font-weight: 400; font-style: normal; text-decoration: none; color: #000; background-color: transparent;\"><input name=\"name1\" type=\"checkbox\">&nbsp; Down wedge</span></td>\n    <td class=\"tg-cly1\"><span style=\"font-weight: 400; font-style: normal; text-decoration: none; color: #000; background-color: transparent;\"><input name=\"name1\" type=\"checkbox\">&nbsp; On floor</span></td>\n    <td class=\"tg-cly1\"><span style=\"font-weight: 400; font-style: normal; text-decoration: none; color: #000; background-color: transparent;\"><input name=\"name1\" type=\"checkbox\">&nbsp; To front support</span></td>\n    <td class=\"tg-cly1\"><span style=\"font-weight: 400; font-style: normal; text-decoration: none; color: #000; background-color: transparent;\"><input name=\"name1\" type=\"checkbox\">&nbsp; To handstand</span></td>\n  </tr>\n  <tr>\n    <td class=\"tg-yla0\"><span style=\"font-style: normal; text-decoration: none; color: #000; background-color: transparent;\">Handstand</span></td>\n    <td class=\"tg-cly1\"><span style=\"font-weight: 400; font-style: normal; text-decoration: none; color: #000; background-color: transparent;\"><input name=\"name1\" type=\"checkbox\">&nbsp; Half handstand</span></td>\n    <td class=\"tg-cly1\"><span style=\"font-weight: 400; font-style: normal; text-decoration: none; color: #000; background-color: transparent;\"><input name=\"name1\" type=\"checkbox\">&nbsp; 5 sec belly to wall hold</span></td>\n    <td class=\"tg-cly1\"><span style=\"font-weight: 400; font-style: normal; text-decoration: none; color: #000; background-color: transparent;\"><input name=\"name1\" type=\"checkbox\">&nbsp; 3 second hold </span></td>\n    <td class=\"tg-cly1\"><span style=\"font-weight: 400; font-style: normal; text-decoration: none; color: #000; background-color: transparent;\"><input name=\"name1\" type=\"checkbox\">&nbsp; 5 second hold, roll out</span></td>\n  </tr>\n  <tr>\n    <td class=\"tg-yla0\"><span style=\"font-style: normal; text-decoration: none; color: #000; background-color: transparent;\">Cart-wheel / Round-off</span></td>\n    <td class=\"tg-cly1\"><span style=\"font-weight: 400; font-style: normal; text-decoration: none; color: #000; background-color: transparent;\"><input name=\"name1\" type=\"checkbox\">&nbsp; Fully supported</span></td>\n    <td class=\"tg-cly1\"><span style=\"font-weight: 400; font-style: normal; text-decoration: none; color: #000; background-color: transparent;\"><input name=\"name1\" type=\"checkbox\">&nbsp; Side to side (no support)</span></td>\n    <td class=\"tg-cly1\"><span style=\"font-weight: 400; font-style: normal; text-decoration: none; color: #000; background-color: transparent;\"><input name=\"name1\" type=\"checkbox\">&nbsp; Cartwheel step in</span></td>\n    <td class=\"tg-cly1\"><span style=\"font-weight: 400; font-style: normal; text-decoration: none; color: #000; background-color: transparent;\"><input name=\"name1\" type=\"checkbox\">&nbsp; Good round-off</span></td>\n  </tr>\n  <tr>\n    <td class=\"tg-yla0\"><span style=\"font-style: normal; text-decoration: none; color: #000; background-color: transparent;\">Walk-over</span></td>\n    <td class=\"tg-cly1\"></td>\n    <td class=\"tg-cly1\"><span style=\"font-weight: 400; font-style: normal; text-decoration: none; color: #000; background-color: transparent;\"><input name=\"name1\" type=\"checkbox\">&nbsp; Good bridge</span></td>\n    <td class=\"tg-cly1\"><span style=\"font-weight: 400; font-style: normal; text-decoration: none; color: #000; background-color: transparent;\"><input name=\"name1\" type=\"checkbox\">&nbsp; Bridge kick-over</span></td>\n    <td class=\"tg-cly1\"><span style=\"font-weight: 400; font-style: normal; text-decoration: none; color: #000; background-color: transparent;\"><input name=\"name1\" type=\"checkbox\">&nbsp; Back walk-over</span></td>\n  </tr>\n</tbody>\n</table>"
+  },
+  {
+   "fieldname": "section_break_21",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_23",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "html_24",
+   "fieldtype": "HTML",
+   "options": "<style type=\"text/css\">\n.tg  {border-collapse:collapse;border-spacing:0;}\n.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg .tg-1wig{font-weight:bold;text-align:left;vertical-align:top}\n.tg .tg-zci2{background-color:#dae8fc;font-weight:bold;text-align:left;vertical-align:top}\n.tg .tg-0lax{text-align:left;vertical-align:top}\n</style>\n<table class=\"tg\">\n<thead>\n  <tr>\n    <th class=\"tg-zci2\">RHYTHMIC</th>\n    <th class=\"tg-zci2\">Rate</th>\n    <th class=\"tg-zci2\">Comments</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td class=\"tg-1wig\">Flexibility</td>\n    <td class=\"tg-0lax\"><input id=\"tentacles\" max=\"5\" min=\"0\" name=\"tentacles\" type=\"number\"></td>\n    <td class=\"tg-0lax\"><input></td>\n  </tr>\n  <tr>\n    <td class=\"tg-1wig\">Hand Coordination</td>\n    <td class=\"tg-0lax\"><input id=\"tentacles\" max=\"5\" min=\"0\" name=\"tentacles\" type=\"number\"></td>\n    <td class=\"tg-0lax\"><input></td>\n  </tr>\n  <tr>\n    <td class=\"tg-1wig\">Focus</td>\n    <td class=\"tg-0lax\"><input id=\"tentacles\" max=\"5\" min=\"0\" name=\"tentacles\" type=\"number\"></td>\n    <td class=\"tg-0lax\"><input></td>\n  </tr>\n</tbody>\n</table>"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-07-22 13:51:59.482817",
+ "modified_by": "Administrator",
+ "module": "Gymnastics",
+ "name": "Applicant Assessment",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}
